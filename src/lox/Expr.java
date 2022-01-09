@@ -47,6 +47,8 @@ public abstract class Expr {
 
   public static class Literal extends Expr {
 
+    public Expr literal;
+
     public Literal(Object value) {
       this.value = value;
     }

@@ -37,8 +37,7 @@ public class AstPrinter implements Expr.Visitor<String> {
   private String parenthesize(String name, Expr... exprs) {
     final StringBuilder builder = new StringBuilder();
     builder.append("(").append(name);
-    for (Expr expr :
-        exprs) {
+    for (Expr expr : exprs) {
       builder.append(" ");
       builder.append(expr.accept(this));
     }
